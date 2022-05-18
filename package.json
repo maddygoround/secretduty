@@ -1,0 +1,12 @@
+{
+  "name": "secrets-not-allowed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maddygoround/secrets-not-allowed.git",
+  "author": "maddygoround <rathodm63@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
+}
