@@ -5,7 +5,7 @@ inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
     required: true
-    default:  ${{ github.workspace }}
+    default: 'World'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
