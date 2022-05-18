@@ -9,7 +9,7 @@ try {
   const time = new Date().toTimeString();
   pip3.install().then((success) => {
     if (success) {
-      core.setOutput("time", time);
+      // core.setOutput("time", time);
       console.log("pip3 has been succesfully installed!");
       pip3.exec("--version");
     } else {
