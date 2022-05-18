@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          lfs: true
       - name: Check for vulnerabilities
         id: checks
         uses: maddygoround/secrets-not-allowed@main
