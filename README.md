@@ -1,4 +1,4 @@
-# secrets-not-allowed
+# secretduty
 ✨ A GitHub Action that automatically checks for hardcoded secrets in your code. You can integrate it in your CI/CD pipeline.
 
 ## Detects
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Check for vulnerabilities
         id: checks
-        uses: maddygoround/secrets-not-allowed@v1.2
+        uses: maddygoround/secretduty@v1.2
       - name: Get results of scan
         run: echo "Scan Results - ${{ steps.checks.outputs.result }}"
 ```
