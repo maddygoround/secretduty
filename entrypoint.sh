@@ -1,5 +1,6 @@
 #!/bin/sh -l
-whispers $1 >> output.txt
+echo "$1"
+`whispers $1 >> output.txt`
 filecontent=`cat output.txt`
 echo "$filecontent"
 if [ -s output.txt ]; then
