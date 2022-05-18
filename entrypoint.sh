@@ -1,7 +1,5 @@
 #!/bin/sh -l
-echo "Hello $1"
-echo "Mahendra Rathod"
-whispers ./secrets-not-allowed >> output.txt
+whispers $1 >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
 if [ -s output.txt ]; then

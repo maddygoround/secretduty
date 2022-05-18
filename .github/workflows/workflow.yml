@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Vulnerabilities checks
     steps:
       - name: Check for secrets
         id: secrets-check
@@ -11,4 +11,4 @@ jobs:
         with:
           workspace: ${{ github.workspace }}
       - name: Get results of scan
-        run: echo "The time was ${{ steps.hello.outputs.result }}"
+        run: echo "Scan Results - ${{ steps.hello.outputs.result }}"
