@@ -2,6 +2,7 @@
 echo `ls`
 echo ls
 ls $1
+ls ./secrets-not-allowed
 ls
 date
 whispers ./ >> output.txt
