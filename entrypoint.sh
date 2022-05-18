@@ -1,4 +1,5 @@
 #!/bin/sh -l
+echo "$1"
 whispers $1 >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
