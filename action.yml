@@ -1,3 +1,4 @@
+# action.yml
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
@@ -9,7 +10,7 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
-  using: 'node16'
-  main: 'index.js'
-  steps:
-    - uses: actions/setup-python@v3
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}

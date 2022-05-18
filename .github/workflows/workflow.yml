@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Mahendra
+      - name: Hello world action step
         id: hello
         uses: maddygoround/secrets-not-allowed@main
         with:
