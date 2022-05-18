@@ -1,14 +1,14 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Check for secrects'
+description: 'Check for security vulnerabilities'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  workspace:  # id of input
+    description: 'Workspace to scan'
     required: true
-    default: 'World'
+    default: ./
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  result: # id of output
+    description: 'Scan results'
 runs:
   using: 'docker'
   image: 'Dockerfile'

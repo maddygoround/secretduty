@@ -5,15 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Check for secrets
+        id: secrets-check
+        uses: maddygoround/secrets-not-allowed@main
         with:
-          lfs: true
-      - name: Hello world action step
-        id: hello
-        uses: ./
-        with:
-          who-to-greet: ${{ github.workspace }}
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          workspace: ${{ github.workspace }}
+      - name: Get results of scan
+        run: echo "The time was ${{ steps.hello.outputs.result }}"
