@@ -11,3 +11,5 @@ outputs:
 runs:
   using: 'node16'
   main: 'index.js'
+  steps:
+    - uses: actions/setup-python@v3
