@@ -11,8 +11,9 @@
 * Dangerous functions
 * Sensitive files
 
-## Installation
-# secrets-not-allowed docker action
+# Installation
+
+## Action
 This action fails the build when there is an hardcoded secrets found in your code.
 
 ## Inputs
