@@ -1,6 +1,7 @@
 #!/bin/sh -l
 echo "$1"
-whispers ".$1" >> output.txt
+cd "$1"
+whispers ./ >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
 if [ -s output.txt ]; then
