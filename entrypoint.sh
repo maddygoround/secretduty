@@ -1,6 +1,6 @@
 #!/bin/sh -l
 echo "$1"
-cd "$1"
+ls ./
 whispers ./ >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
