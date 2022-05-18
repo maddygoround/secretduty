@@ -22,11 +22,12 @@ comming soon
 `result` - List of vunerblites detetced with there severity.
 
 ## Example usage
-```
+
+```yaml
 on: [push]
 
 jobs:
-  hello_world_job:
+  secret_checker:
     runs-on: ubuntu-latest
     name: Vulnerabilities check
     steps:
