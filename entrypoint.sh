@@ -1,11 +1,9 @@
 #!/bin/sh -l
-echo `ls`
-echo ls
-ls $1
-ls ./secrets-not-allowed
-ls
+echo "Hello $1"
+echo "Mahendra Rathod"
 date
-whispers ./ >> output.txt
+ls
+whispers ./secrets-not-allowed >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
 if [ -s output.txt ]; then
