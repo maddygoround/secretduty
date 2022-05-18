@@ -10,6 +10,7 @@
 * Authentication tokens
 * Dangerous functions
 * Sensitive files
+
 ## Installation
 # secrets-not-allowed docker action
 This action fails the build when there is an hardcoded secrets found in your code.
@@ -18,8 +19,7 @@ This action fails the build when there is an hardcoded secrets found in your cod
 comming soon
 
 ## Outputs
-## `result`
-List of vunerblites detetced with there severity.
+`result` - List of vunerblites detetced with there severity.
 
 ## Example usage
 ```
@@ -38,3 +38,7 @@ jobs:
       - name: Get results of scan
         run: echo "Scan Results - ${{ steps.checks.outputs.result }}"
 ```
+
+# License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE).
