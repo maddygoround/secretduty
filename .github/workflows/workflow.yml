@@ -8,5 +8,7 @@ jobs:
       - name: Check for vulnerabilities
         id: checks
         uses: maddygoround/secrets-not-allowed@main
+        with:
+          workspace: ${{ github.workspace }}
       - name: Get results of scan
         run: echo "Scan Results - ${{ steps.checks.outputs.result }}"

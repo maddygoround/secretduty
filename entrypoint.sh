@@ -1,6 +1,7 @@
 #!/bin/sh -l
 echo `ls`
 echo ls
+ls $1
 ls
 date
 whispers ./ >> output.txt
