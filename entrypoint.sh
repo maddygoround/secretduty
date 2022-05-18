@@ -1,4 +1,8 @@
 #!/bin/sh -l
+echo `ls`
+echo ls
+ls
+date
 whispers ./ >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
