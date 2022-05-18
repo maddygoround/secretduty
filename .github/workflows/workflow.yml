@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
+      - name: Mahendra
         id: hello
-        uses: maddygoround/secrets-not-allowed@v1.1
+        uses: maddygoround/secrets-not-allowed@main
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
