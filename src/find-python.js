@@ -23,12 +23,12 @@ async function useCpythonVersion(
   const semanticVersionSpec = pythonVersionToSemantic(desugaredVersionSpec);
   core.debug(`Semantic version spec of ${version} is ${semanticVersionSpec}`);
 
-  let installDir = tc.find(
-    'Python',
-    semanticVersionSpec,
-    architecture
-  );
-  
+  // let installDir = tc.find(
+  //   'Python',
+  //   semanticVersionSpec,
+  //   architecture
+  // );
+  let installDir = false;
   if (!installDir) {
     core.info(
       `Version ${semanticVersionSpec} was not found in the local cache`
