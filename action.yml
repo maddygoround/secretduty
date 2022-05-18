@@ -1,16 +1,9 @@
 # action.yml
 name: 'Check for secrects'
 description: 'Check for security vulnerabilities'
-inputs:
-  workspace:  # id of input
-    description: 'Workspace to scan'
-    required: true
-    default: ./
 outputs:
   result: # id of output
     description: 'Scan results'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.workspace }}
