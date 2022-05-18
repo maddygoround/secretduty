@@ -8,6 +8,7 @@
   "keywords": [],
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "pip3" : "^420.911.69"
+    "@actions/cache" : "^2.0.4",
+    "@actions/tool-cache" : "^2.0.1"
   }
 }
