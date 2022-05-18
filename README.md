@@ -20,7 +20,7 @@ This action fails the build when there is an hardcoded secrets found in your cod
 comming soon
 
 ## Outputs
-`result` - List of vunerblites detetced with there severity.
+`result` - List of vulnerabilities detetced with there severity.
 
 ## Example usage
 
@@ -42,5 +42,4 @@ jobs:
 ```
 
 # License
-
 The scripts and documentation in this project are released under the [MIT License](LICENSE).
