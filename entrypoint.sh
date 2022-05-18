@@ -2,6 +2,8 @@
 echo "Hello $1"
 echo "Mahendra Rathod"
 date
+ls ./
+cd ..
 ls
 whispers ./secrets-not-allowed >> output.txt
 filecontent=`cat output.txt`
