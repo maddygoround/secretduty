@@ -9,8 +9,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Check for vulnerabilities
         id: checks
-        uses: maddygoround/secretduty@main
+        uses: maddygoround/secretduty@v1.2
         with:
-          severity: "['CRITICAL','MAJOR']"
+          severity: ['CRITICAL','MAJOR']
       - name: Get results of scan
         run: echo "Scan Results - ${{ steps.checks.outputs.result }}"
