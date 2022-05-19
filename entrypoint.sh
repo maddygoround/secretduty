@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 echo "$1" >> input.txt
 t=`sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' -e "s/['\"]//g" < input.txt`
 whispers --severity $t ./ >> output.txt
