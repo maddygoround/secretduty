@@ -1,6 +1,6 @@
 # action.yml
 name: 'A GitHub Action that automatically checks for hardcoded secrets in your code'
-description: 'It's scan your code for security vulnerabilities'
+description: 'It scan your code for security vulnerabilities'
 inputs:
   severity:  # id of input
     description: 'severity to catch'
