@@ -1,6 +1,6 @@
 #!/bin/sh -l
 echo "$1"
-t=$(sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' <<< $1)
+t = sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' <<< $1
 echo $t
 whispers ./ >> output.txt
 filecontent=`cat output.txt`
