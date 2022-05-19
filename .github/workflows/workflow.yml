@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Check for vulnerabilities
         id: checks
-        uses: maddygoround/secretduty@main
+        uses: maddygoround/secretduty@master
         with:
           severity: "['CRITICAL','MAJOR']"
       - name: Get results of scan
