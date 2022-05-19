@@ -5,7 +5,7 @@ inputs:
   severity:  # id of input
     description: 'severity to catch'
     required: false
-    default: ./
+    default: "['CRITICAL']"
 outputs:
   result: # id of output
     description: 'Scan results'

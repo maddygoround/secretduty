@@ -11,6 +11,6 @@ jobs:
         id: checks
         uses: maddygoround/secretduty@main
         with:
-          severity: ['CRITICAL','MAJOR']
+          severity: "['CRITICAL','MAJOR']"
       - name: Get results of scan
         run: echo "Scan Results - ${{ steps.checks.outputs.result }}"
