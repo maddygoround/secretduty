@@ -1,8 +1,8 @@
 #!/bin/sh -l
 echo "$1"
-echo $1
-# t=$(sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' <<< $1)
-# echo $t
+t=$1
+t=$(sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' <<< $t)
+echo $t
 whispers ./ >> output.txt
 filecontent=`cat output.txt`
 echo "$filecontent"
