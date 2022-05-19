@@ -1,7 +1,9 @@
 #!/bin/sh -l
 echo "$1" >> input.txt
 t=`sed -e 's/\[//g' -e 's/\]//g' -e 's/,$//' < input.txt`
-whispers --severity $t ./ >> output.txt
+echo $t
+whispers --severity "$t" ./ >> output.txt
+cat output.txt
 filecontent=`cat output.txt`
 if [ -s output.txt ]; then
   echo "Vulnerabilities found!"
