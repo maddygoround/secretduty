@@ -1,9 +1,16 @@
 # action.yml
 name: 'Check for secrects'
 description: 'Check for security vulnerabilities'
+inputs:
+  severity:  # id of input
+    description: 'severity to catch'
+    required: false
+    default: ./
 outputs:
   result: # id of output
     description: 'Scan results'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.severity }}
